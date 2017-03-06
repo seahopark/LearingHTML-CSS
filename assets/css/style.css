@@ -26,7 +26,7 @@ a { color: inherit; text-decoration: none; }
 
 /* header */
 .header { position: fixed; top: 0; width: 100%; background-color: rgba(0,0,0,0.3); overflow: hidden; z-index: 10; }
-.header .logo { box-sizing: content-box; float: left; display: block; margin: 16px; width: 50px; height: 50px; border-radius: 100%; background: url('../img/logo_corona.jpg') no-repeat center / cover;	}
+.header .logo { box-sizing: content-box; float: left; display: block; margin: 16px; width: 50px; height: 50px; border-radius: 100%; background: url('../img/favi.png') no-repeat center / cover;	}
 .header .nav { float: right; }
 .page-list-nav li { transition: all 0.35s; }
 .page-list-nav li:hover { font-weight: 700; }
@@ -50,10 +50,10 @@ html, body { height: 100%; }
 .page-list-member .member-info .name { position: relative; top: 50%; font-family: 'Noto Serif', sans-serif; font-size: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .page-list-member .member-info .position { display: block; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; }
 .page-list-member .member-cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%); background-position: center; background-size: cover; overflow: hidden; }
-.page-list-member li:nth-child(1) .member-cover { background-image: url('../img/img_member_hk.jpg'); }
-.page-list-member li:nth-child(2) .member-cover { background-image: url('../img/img_member_mw.jpg'); }
-.page-list-member li:nth-child(3) .member-cover { background-image: url('../img/img_member_is.jpg'); }
-.page-list-member li:nth-child(4) .member-cover { background-image: url('../img/img_member_hc.jpg'); }
+.page-list-member li:nth-child(1) .member-cover { background-image: url('../img/iconmonstr-trophy-14-240.png'); }
+.page-list-member li:nth-child(2) .member-cover { background-image: url('../img/depositphotos_81218856-stock-illustration-podium-icon.jpg'); }
+.page-list-member li:nth-child(3) .member-cover { background-image: url('../img/iconmonstr-location-21-240.png'); }
+.page-list-member li:nth-child(4) .member-cover { background-image: url('../img/iconmonstr-task-1-240.png'); }
 
 /* video */
 .page-content-video { background-color: #fff; }
@@ -63,14 +63,14 @@ html, body { height: 100%; }
 .page-content-album { background-color: #eee; }
 .page-list-album li { float: none; display: inline-block; position: relative; margin: 0 10px; width: 248px; border: 1px solid #ddd; cursor: pointer; transition: all 0.2s; }
 .page-list-album li:hover { box-shadow: 0 15px 20px rgba(0,0,0,0.2); transform: translateY(-4px); }
-.page-list-album .album-cover { position: relative; width: 248px; height: 440.9px; background-position: center; background-size: cover; }
+.page-list-album .album-cover { position: relative; width: 245px; height: 500px; background-position: center; background-size: cover; }
 .page-list-album .album-info { padding: 32px 16px; background-color: #fff; }
 .page-list-album .album-name { font-family: 'Noto Serif', sans-serif; font-size: 20px; }
 .page-list-album .album-date { display: block; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; }
-.page-list-album li:nth-child(1) .album-cover { background-image: url('http://cdnimg.melon.co.kr/cm/album/images/100/16/426/10016426_org.jpg'); }
-.page-list-album li:nth-child(2) .album-cover { background-image: url('http://cdnimg.melon.co.kr/cm/album/images/100/10/416/10010416_org.jpg'); }
-.page-list-album li:nth-child(3) .album-cover { background-image: url('http://cdnimg.melon.co.kr/cm/album/images/100/00/581/10000581_org.jpg'); }
-.page-list-album li:nth-child(4) .album-cover { background-image: url('http://cdnimg.melon.co.kr/cm/album/images/026/57/056/2657056_org.jpg'); }
+.page-list-album li:nth-child(1) .album-cover {background-image: url('../img/Tag%20Song.jpg'); }
+.page-list-album li:nth-child(2) .album-cover { background-image: url('../img/Song%20Quiz.jpg'); }
+.page-list-album li:nth-child(3) .album-cover { background-image: url('../img/Image%20Curation.jpg'); }
+.page-list-album li:nth-child(4) .album-cover { background-image: url('../img/and%20so%20on.jpg'); }
 
 /* contact */
 .page-content-contact { background-color: #fff; }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>cluster customization</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h3>test</h3>
+<div id="map-container">
+  <div id="map"></div>
+</div>
+<div id="inline-actions">
+  <span class="item">minimumClusterSize:
+    <select id="minclustersize">
+      <option value="50">50</option>
+      <option value="2">2</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="100">100</option>
+      <option value="150">150</option>
+      <option value="200">200</option>
+    </select>
+  </span>
+  <span class="item">Cluster grid size:
+        <select id="size">
+          <option value="-1">Default</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+        </select>
+    </span>
+    <span class="item">Data count:
+        <select id="datacount">
+          <option value="2500">2500</option>
+          <option value="5000">5000</option>
+          <option value="10000">10000</option>
+          <option value="20000">20000</option>
+          <option value="30000">30000</option>
+          <option value="3000">3000</option>
+        </select>
+      </span>
+      <span>Max zoom level:
+            <select id="zoom">
+              <option value="-1">Default</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+            </select>
+      </span>
+  <input id="refresh" type="button" value="Refresh Map" class="item" />
+  <a href="#" id="clear">Clear</a>
+</div>
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAAwbM1Pn-nioJ3p9Fufe3PNoNTWwjGG2U'></script>
+<script src='https://cdn.rawgit.com/MyMusicTaste/v3-utility-library/master/markerclustererplus/src/markerclusterer.js'></script>
+<script src='https://cdn.rawgit.com/MyMusicTaste/v3-utility-library/master/markerclustererplus/src/data.json'></script>
+
+    <script src="js/index.js"></script>
+<h4>1. info</h4>
+  <ul>
+    <li>minimumClusterSize: 클러스터 안에 들어가는 피커의 최소 갯수</li>
+    <li>Cluster Grid size: 동그란 클러스터를 구성하는 사각형의 크기</li>
+    <li>Data Count: 들어가는 데이터의 총 수</li>
+    <li>Max zoom level: 최고 확대 할 수 있는 레벨</li>
+  </ul>
+<p>앞에 두가지 세그먼트로 클러스터가 어떻게 보여질 것인지 결정될 듯.
+<br>그리드 사이즈가 작아지고 미니멈 클러스터 수가 커질수록 픽커가 더 많이 생기고, 클러스터는 줄어듬
+<br>즉, <b>미니멈 클러스터와 픽커 수는 정비례, 그리드 사이즈와 픽커는 반비례</b>함.
+<br>클러스터 사이즈는 조금 씩 더 줄이고, 픽커가 많아질수록 <a href="http://blog.naver.com/PostView.nhn?blogId=skh8464&logNo=220854301995&parentCategoryNo=&categoryNo=15&viewDate=&isShowPopularPosts=true&from=search" target="_blank">조도 + 투명도</a>를 조금씩 변경하는게 필요할 듯</p>
+
+<h4>2. 수정 info</h4>
+  <ul>
+    <li>FTP정보는 슬랙에 있습니다.</li>
+    <li>html index 를 확인하시면 드랍다운 리스트 들을 변경할 수 있습니다.</li>
+    <li>option value ="~"에서 ~과 브라켓 밖에 수를 추가하시면 옵션을 늘릴 수 있습니다.</li>
+  </ul>
+</body>
+</html>
